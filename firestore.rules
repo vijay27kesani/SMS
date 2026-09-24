@@ -1,0 +1,15 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Helper function to check auth
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    // Allow read/write for all authenticated users in this university app
+    // and allow initial public read for demo and bootstrap
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "AI-Powered Student Management System",
+  "description": "Centralized, intelligent college management platform for Administrators, Faculty, Students, and Parents with Google Gemini AI academic analytics and Firebase integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
